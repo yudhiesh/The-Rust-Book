@@ -1,3 +1,25 @@
+// Code to be used in the main functions
+//pub fn vector_functions() {
+//    //vectors::hello();
+//    //vectors::display_vector_elements();
+//    //vectors::add_access_elements();
+//    //vectors::itr_over_values();
+//    //vectors::itr_over_edit_values();
+//}
+//
+//// Use the enum in the vectors file and then print out the values from there
+//pub fn print_enum_of_diff_types() {
+//    use vectors::*;
+//    //vector_functions();
+//    let data1 = Data::Text(String::from("Hello"));
+//    let data2 = Data::Float(0.32);
+//    let data3 = Data::Int(32);
+//    //let v = vec![data1, data2, data3];
+//    vectors::print_enum(Some(data1));
+//    vectors::print_enum(Some(data2));
+//    vectors::print_enum(Some(data3));
+//}
+
 pub fn hello() {
     println!("Hello")
 }
@@ -62,7 +84,9 @@ impl std::fmt::Display for Data {
 }
 pub fn print_enum(data: Option<Data>) {
     match data {
-        Some(val) => println!("{}", val),
-        None => println!("No value to print!"),
+        Some(Data::Int(val)) => println!("{}", val),
+        Some(Data::Text(val)) => println!("{}", val),
+        Some(Data::Float(val)) => println!("{}", val),
+        None => println!("No value to print"),
     }
 }

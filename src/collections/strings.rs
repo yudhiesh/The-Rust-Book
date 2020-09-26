@@ -6,6 +6,13 @@
 // Rust offers a more specific manner which is slicing the strings
 //
 
+// Code to be used in the main functions
+//pub fn string_functions() {
+//    //strings::print_str1();
+//    //strings::print_str2();
+//    //strings::print_format();
+//    strings::slice_strings();
+//}
 pub fn print_str1() {
     let mut s1 = String::from("foo");
     let s2 = "bar";

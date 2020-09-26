@@ -1,5 +1,14 @@
 use std::collections::HashMap;
 
+// Code for the main function
+//pub fn hash_map_functions() {
+//    //hash_map::create_hash_map();
+//    //hash_map::ownership_hash_map();
+//    //hash_map::access_values_hash_map();
+//    //hash_map::insert_if_key_empty();
+//    hash_map::update_value_hash_map();
+//}
+
 pub fn create_hash_map() {
     let teams = vec![String::from("Blue"), String::from("Red")];
     let initial_scores = vec![50, 20];
