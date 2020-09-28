@@ -1,6 +1,8 @@
+#![allow(non_snake_case)]
 mod collections;
 mod error_handling;
 mod generics;
+mod lib;
 
 // Importing files from collections dir
 pub use crate::collections::*;
